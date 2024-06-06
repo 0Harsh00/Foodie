@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.nav{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.logo{
+    width: 160px;
+}
+.logo:hover{
+    transform: scale(1.05);
+}
+.nav-menu{
+    display: flex;
+    gap: 1.6rem;
+    list-style: none;   
+    font-size: 18px;
+    color: #49557e;
+    font-family: outfit;
+}
+#h:hover{
+    color: tomato;
+}
+#m:hover{
+    color: tomato;
+}
+#a:hover{
+    color: tomato;
+}
+#c:hover{
+    color: tomato;
+}
+.nav-right-side{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap:28px
+}
+
+ .searchicon{
+    width: 25px;
+}
+.searchicon1{
+    width: 25px;    
+}
+
+
+.signin_btn button{
+    padding: 9px 25px;
+    background: transparent;
+    color: #49557e;
+    font-family: outfit;
+    font-size: 16px;
+    border: 1px solid #ff6347   ;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.signin_btn button:hover{
+    background-color:#fff4f2;
+}
+.nav .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+.navsearchicon{
+    position: relative;
+}
+.navsearchicon .reddot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #ff6347;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+.navbar-profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+
+}
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.nav-profile-dropdown p{
+    margin-top: 25px;
+    
+}
+.nav-profile-dropdown img{
+    width: 25px;
+}
+.nav-profile-dropdown p:hover{
+    color: tomato;
+}
+
+@media (max-width:1050px) {
+    .nav .logo{
+        width: 140px;
+    }
+    .nav-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .nav-right-side{
+        gap: 30px;
+    }
+    .nav-right-side img{
+        width: 22px;
+    }
+    .signin_btn button{
+        padding: 8px 25px;
+    }
+}
+@media (max-width:950px) {
+    .nav .logo{
+        width: 120px;
+    }
+    .nav-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .nav-right-side{
+        gap: 20px;
+    }
+    .nav-right-side img{
+        width: 20px;
+    }
+    .signin_btn button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+    
+}
+@media (max-width:750px) {
+    .nav-menu{
+        display: none;
+    }
+}

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+.homeimg {
+  margin: 30px auto;
+  height: 34vw;
+  /* background-image: url('/header_img.png'); */
+  background-image: url("/food_bc.jpg");
+  background-size: contain;
+  border-radius: 24%;
+  background-repeat: none;
+  position: relative;
+}
+.header_heading {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  font-family: outfit;
+  color: #fff;
+  animation: fadein 3.5s;
+  bottom: 14%;
+  left: 5.5vw;
+}
+.header_heading h2 {
+  font-size: max(4.5vw, 22px);
+  font-weight: 500px;
+}
+.header_heading p {
+  font-size: 1.15vw;
+  color: #f6f6f6;
+  /* text-align: center; */
+}
+
+.header_heading button {
+  /* margin-top: 15px; */
+  padding: 1vw 2.3vw;
+  color: #747474;
+  background-color: #fff;
+  font-family: outfit;
+  font-size: max(1vw, 13px);
+  border: none;
+  transition: 0.3s;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.menu-btn:hover {
+  background-color: #fff4f2;
+  color: tomato;
+}
+
+/* creating our site responsive */
+
+@media (max-width: 1050px) {
+  /* .homeimg{
+        height:38vw;
+    } */
+  .header_heading {
+    max-width: 45%;
+  }
+}
+@media (max-width: 950px) {
+  .header_heading {
+    max-width: 60%;
+  }
+  .header_heading p{
+    display: none;
+  }
+  .header_heading button {
+    padding: 2vw 4vw;
+  }
+}
+@media (max-width:380px) {
+    .header_heading h2 {
+        font-size: 5.3vw;
+    }
+}

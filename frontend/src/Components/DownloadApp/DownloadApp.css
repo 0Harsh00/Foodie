@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.DownloadApp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 30px;
+    margin-top: 60px;
+    background-color: #F1F1F5;
+}
+.DownloadApp h1{
+    color: #3D4147;
+    font-family: Outfit;
+    font-size: 28px;
+}
+.playstore{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+.plays:hover{
+    transform: translateY(3px);
+}
+.apps:hover{
+    transform: translateY(3px);
+}
+
+@media (max-width:1050px) {
+    .DownloadApp{
+        display: flex ;
+        flex-direction: column;
+        
+    }
+    .DownloadApp h1{
+        font-size: 18px;
+        text-align: center;
+    }
+    .playstore{
+        display: flex;
+        gap: 10px;
+    }
+    .playstore img{
+        width: 30vw;
+    }
+}

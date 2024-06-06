@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.footer{
+    /* margin-top: 5rem; */
+    background-color:#323232;
+    padding: 30px 9vw;
+    color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-family: Outfit;
+}
+.footer hr{
+    width: 100%;
+    height: 2px;
+    color: #d9d9d9;
+    margin: 20px , 0;
+    background: gray;
+}
+.hr{
+    color: #d9d9d9;
+    font-family: Outfit;
+}
+.left-side p{
+    color: #d9d9d9;
+    font-family: Outfit;
+    margin-top: 18px;
+}
+.socaillogo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+}
+.scsites1:hover{
+    transform: scale(1.1);
+}
+.scsites2:hover{
+    transform: scale(1.1);
+}
+.scsites3:hover{
+    transform: scale(1.1);
+}
+.footer-element{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+.logof{
+    width: 150px;
+}
+.logof:hover{
+        transform:translateY(3px);
+    
+}
+.left-side , .center ,.right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.left-side li , .center li ,.right-side li {
+    list-style: none;
+    color: #d9d9d9;
+    margin-bottom: 10px;
+}
+@media (max-width:1050px) {
+    .footer-element{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+}
